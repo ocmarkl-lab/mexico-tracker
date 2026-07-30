@@ -1,0 +1,213 @@
+{
+  "header": {
+    "eyebrow": "14 nights · 5 adults · 7–21 Aug 2026",
+    "title": "Mexico — Stays & Route",
+    "sub": "Vienna → New York → Cancún, then three Mexican hubs by flight.",
+    "stats": [
+      { "k": "Booked stays", "v": "5", "small": "of 7 night-blocks" },
+      { "k": "Stay cost", "v": "~€3,495", "small": "4 priced stays" },
+      { "k": "Open", "v": "2", "small": "nights unbooked" }
+    ],
+    "grand": "Open: <b>Puerto Morelos (10 Aug)</b> &amp; <b>CDMX (17 Aug)</b> · no CDMX rental car"
+  },
+
+  "route": [
+    { "type": "seg", "label": "New York · 3–7 Aug" },
+
+    { "type": "flight", "rt": "VIE → LHR → JFK · BA0723 / BA0115",
+      "dt": "Sun 3 Aug · 11:00 → 17:35 (JFK) · sons · ZVDHND" },
+
+    { "type": "flight", "rt": "VIE → JFK · Austrian OS 35",
+      "dt": "Sun 3 Aug · 16:55 → 20:05 · Oliver &amp; Alexandra · 72PPSU" },
+
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "New York · 4 nights", "nights": "4 nights · 3→7 Aug",
+      "why": "Base in Carroll Gardens / Red Hook, Brooklyn. Newark car picked up on arrival evening.",
+      "pick": {
+        "name": "110 Luquer Street, Brooklyn, NY",
+        "meta": "Stay address 3–7 Aug",
+        "conf": "Entry code <b>170765</b> · Exit code <b>170765</b>",
+        "ok": ["Door codes confirmed"],
+        "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/110+Luquer+Street+Brooklyn+NY", "text": "📍 Maps" }]
+      }
+    },
+
+    { "type": "car", "tag": "Booked", "rt": "NY car — Budget (Newark)",
+      "dt": "Pick up 3 Aug 21:00 · drop 7 Aug · full-size · Priceline 377-163-573-97 · conf 48684782AT6" },
+
+    { "type": "flight", "rt": "EWR → CUN · United UA1050",
+      "dt": "Fri 7 Aug · 09:41 → 12:47 · 5 pax · I8RC9X" },
+
+    { "type": "seg", "label": "Segment 1 — Yucatán loop (car)" },
+
+    { "type": "stop", "state": "", "city": "Cancún (CUN)",
+      "nights": "Arrive Fri 7 Aug · pick up rental car",
+      "why": "Round-trip car loop from the airport: Tulum → Mérida (via Cobá &amp; Valladolid) → Puerto Morelos (via Chichén Itzá)." },
+
+    { "type": "car", "tag": "Booked", "rt": "Car 1 — Cancún (CUN) · Jeep Patriot 4x2 or similar",
+      "dt": "7 Aug 13:00 → 11 Aug 11:00 · CUN airport round-trip · €122 · BSP Auto 928264865351" },
+
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "Tulum · 1 night", "nights": "1 night · 7→8 Aug",
+      "why": "El Castillo on the Caribbean — go early on 8 Aug before the crowds, then drive on.",
+      "pick": {
+        "name": "Casa Kobaab — Suite Violet + Suite Jade",
+        "meta": "2 apartments · breakfast incl. · US$217.46 (~€191)",
+        "conf": "Conf <b>6398349276</b>",
+        "ok": ["Free cancellation until 5 Aug · 5th adult confirmed with host"],
+        "warn": ["Reservation is on file for 4 adults, not 5"],
+        "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/Casa+Kobaab+Tulum", "text": "📍 Maps" }]
+      }
+    },
+
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "Mérida · 2 nights", "nights": "2 nights · 8→10 Aug",
+      "why": "Sat 8: Tulum → Cobá (45 min, climbable-era pyramid site) → cenotes next to Cobá (Choo-Ha / Tamcach-Ha) → Valladolid stroll (~50 min) → Mérida (~1h45). Sun 9: day trip to Uxmal (~1h15 each way), evening in Mérida.",
+      "pick": {
+        "name": "El Palacito Secreto Luxury Boutique Hotel &amp; Spa",
+        "meta": "Calle 66 #393, x 45 y 47, Centro, Mérida · WhatsApp +52 999 224 4533",
+        "conf": "Conf <b>5960376510</b>",
+        "warn": ["Prepaid online before arrival — hotel asks for confirmed arrival time"],
+        "links": [
+          { "cls": "maps", "href": "https://maps.app.goo.gl/AZzcEa1R7gPdfJwMA", "text": "📍 Maps" },
+          { "cls": "", "href": "https://www.elpalacitosecreto.com/", "text": "🌐 Hotel site" },
+          { "cls": "maps", "href": "https://www.google.com/maps/dir/Tulum/Coba/Valladolid/Merida", "text": "📍 Tulum → Cobá → Valladolid → Mérida" },
+          { "cls": "maps", "href": "https://www.google.com/maps/dir/Merida/Uxmal", "text": "📍 Mérida → Uxmal" }
+        ]
+      }
+    },
+
+    { "type": "stop", "state": "", "badge": { "cls": "o", "text": "To book" },
+      "city": "Puerto Morelos · 1 night", "nights": "1 night · 10→11 Aug",
+      "why": "Mon 10: leave Mérida early → Chichén Itzá (~1h20, arrive near 8:00 opening to beat crowds &amp; heat) → Puerto Morelos (~2h40). Beach evening; only ~20 min to CUN airport for the 11 Aug flight.",
+      "links": [
+        { "cls": "maps", "href": "https://www.google.com/maps/dir/Merida/Chichen+Itza/Puerto+Morelos", "text": "📍 Mérida → Chichén → Pto Morelos" },
+        { "cls": "book", "href": "https://www.booking.com/searchresults.html?ss=Puerto+Morelos&checkin=2026-08-10&checkout=2026-08-11&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308", "text": "Search stays" }
+      ]
+    },
+
+    { "type": "flight", "rt": "CUN → OAX · Volaris Y4 3598",
+      "dt": "Tue 11 Aug · 12:51 → 13:49 · 5 pax · UHSC6Q" },
+
+    { "type": "seg", "label": "Segment 2 — Oaxaca &amp; coast (car)" },
+
+    { "type": "car", "tag": "Booked", "rt": "Car 2 — Oaxaca (OAX) · Nissan X-Trail or similar",
+      "dt": "11 Aug 13:30 → 17 Aug 11:00 · OAX airport · prepaid · Alamo 2119439804 (AutoSlash 16469970)" },
+
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "Oaxaca · 3 nights", "nights": "3 nights · 11→14 Aug",
+      "why": "Monte Albán. Drop after flight, pick up local car.",
+      "pick": {
+        "name": "Grana B&amp;B",
+        "meta": "Loft + Junior Suite · breakfast incl. · MXN 34,300 (~€1,725) · pay at property",
+        "conf": "Conf <b>6471047053</b>",
+        "ok": ["Bed #5 confirmed by host Bruno"],
+        "warn": ["Free-cancellation window closed 27 Jul · booked for 4 adults on file · most expensive stop at ~€575/night"],
+        "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/Grana+B%26B+Oaxaca", "text": "📍 Maps" }]
+      }
+    },
+
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "Puerto Escondido · 3 nights", "nights": "3 nights · 14→17 Aug",
+      "why": "Pacific coast detour.",
+      "pick": {
+        "name": "Casa Badú",
+        "meta": "Suite with Sea View + Superior King · no meals · MXN 19,659 (~€989)",
+        "conf": "Conf <b>5831809600</b>",
+        "ok": ["Free cancellation until 6 Aug · host confirmed blow-up bed for the 5th (21 Jul)"],
+        "warn": ["Reservation is on file for 2 adults · extra bed not priced"],
+        "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/Casa+Badu+Puerto+Escondido", "text": "📍 Maps" }]
+      }
+    },
+
+    { "type": "flight", "rt": "OAX → MEX · VivaAerobus VB 1335",
+      "dt": "Mon 17 Aug · 12:50 → 14:00 · 5 pax · CLKMXB" },
+
+    { "type": "seg", "label": "Segment 3 — CDMX (no car)" },
+
+    { "type": "stop", "state": "pending", "badge": { "cls": "p", "text": "Gap" },
+      "city": "Night of Mon 17 Aug", "nights": "1 night · 17→18 Aug · NOT BOOKED",
+      "why": "The Viva flight lands MEX 14:00 on 17 Aug, but Polanco only starts 18 Aug. This night is uncovered.",
+      "links": [{ "cls": "book", "href": "https://www.booking.com/searchresults.html?ss=Mexico+City&checkin=2026-08-17&checkout=2026-08-18&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308", "text": "Search stays" }]
+    },
+
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "Mexico City · 3 nights", "nights": "3 nights · 18→21 Aug",
+      "why": "Tue 18 is the big day: Casa Azul 10:30, Lucha Libre 19:30. Teotihuacán Wed 20 (tour or driver — no rental car; go for the 8:00 opening, no balloon). Puebla dropped.",
+      "pick": {
+        "name": "MD Pasaje Polanco",
+        "meta": "1 apartment · 5 guests ✓ · US$672.26 (~€590)",
+        "conf": "Conf <b>5283491090</b>",
+        "ok": ["Free cancellation until 14 Aug · 5/5 adults"],
+        "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/MD+Pasaje+Polanco+Mexico+City", "text": "📍 Maps" }]
+      }
+    },
+
+    { "type": "seg", "label": "Tickets booked — Tue 18 Aug" },
+
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "Museo Frida Kahlo — Casa Azul", "nights": "Tue 18 Aug · 10:30 entry",
+      "why": "Londres 247, Coyoacán. 15-minute entry window from 10:30 — arrive late and you lose the slot.",
+      "pick": {
+        "name": "5 admissions · 2 general + 3 student/teacher rate",
+        "meta": "Order 117034144 · MXN 861 (~€43) · QR code from the Fever app, on a phone — screenshots OK",
+        "warn": ["3 tickets are the student/teacher/guide rate — bring valid IDs"],
+        "ok": ["Includes 5× free Museo Diego Rivera Anahuacalli entry — undated, valid 12 months"],
+        "links": [
+          { "cls": "maps", "href": "https://www.google.com/maps/search/Museo+Frida+Kahlo+Londres+247+Coyoacan", "text": "📍 Casa Azul" },
+          { "cls": "maps", "href": "https://www.google.com/maps/search/Museo+Anahuacalli+Diego+Rivera", "text": "📍 Anahuacalli" }
+        ]
+      }
+    },
+
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "Lucha Libre — Arena México", "nights": "Tue 18 Aug · 19:30",
+      "why": "Martes Populares de Lucha Libre CMLL.",
+      "pick": {
+        "name": "5 tickets · Ring 1 Premium — Sección RING N, Fila 5, seats 20–24",
+        "meta": "Order 47-31312/MXC · MXN 2,750 (~€138) incl. fees",
+        "warn": ["Mobile tickets only — the confirmation email does NOT work at the door. Load them in the Ticketmaster app or phone wallet before you go."],
+        "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/Arena+Mexico", "text": "📍 Arena México" }]
+      }
+    },
+
+    { "type": "stop", "state": "", "city": "Mexico City (MEX)",
+      "nights": "Depart Fri 21 Aug · 19:00 / 19:50" },
+
+    { "type": "flight", "rt": "MEX → MAD → VIE · Iberia IB0308 / IB0795",
+      "dt": "Fri 21 Aug 19:00 → Sat 22 Aug 19:00 · sons · ZVDHND" },
+
+    { "type": "flight", "rt": "MEX → FRA → VIE · LH 499 / OS 212",
+      "dt": "Fri 21 Aug 19:50 → Sat 22 Aug 17:15 · Oliver &amp; Alexandra · 72PPSU" },
+
+    { "type": "note", "html": "<b>Return — two bookings, same evening.</b> The three sons fly MEX→Madrid→Vienna on Iberia (ZVDHND, dep 19:00); Oliver &amp; Alexandra fly MEX→Frankfurt→Vienna on Lufthansa/Austrian (72PPSU, dep 19:50). Both land Vienna Sat 22 Aug." }
+  ],
+
+  "open": [
+    { "type": "seg", "label": "Stays still to book" },
+
+    { "type": "stop", "state": "", "badge": { "cls": "o", "text": "Open" },
+      "city": "Puerto Morelos · 1 night", "nights": "1 night · 10→11 Aug · 20 min to CUN airport",
+      "links": [{ "cls": "book", "href": "https://www.booking.com/searchresults.html?ss=Puerto+Morelos&checkin=2026-08-10&checkout=2026-08-11&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308", "text": "Search Booking.com" }]
+    },
+
+    { "type": "stop", "state": "pending", "badge": { "cls": "p", "text": "Gap" },
+      "city": "Mexico City · 1 night", "nights": "1 night · 17→18 Aug · lands MEX 14:00, Polanco starts 18 Aug",
+      "links": [{ "cls": "book", "href": "https://www.booking.com/searchresults.html?ss=Mexico+City&checkin=2026-08-17&checkout=2026-08-18&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308", "text": "Search Booking.com" }]
+    },
+
+    { "type": "seg", "label": "Open items" },
+
+    { "type": "note", "html": "<b>Cars:</b> Cancún round-trip (7→11 Aug) and Oaxaca (11→17 Aug) are booked. <b>No CDMX car</b> — decided against it, so Teotihuacán on Wed 20 needs a tour or a driver." },
+
+    { "type": "note", "html": "<b>Mérida:</b> confirm arrival time with El Palacito Secreto (WhatsApp +52 999 224 4533) — payment is taken through the hotel's own system before arrival, so watch for a card-decline message. <b>Price still unknown</b> — the Booking confirmation went to Alexandra's inbox only." },
+
+    { "type": "note", "html": "<b>Guest counts:</b> Kobaab, Grana and Casa Badú are all on file for fewer than 5 adults. Hosts have agreed the extra person verbally in each case, but it isn't in the reservations and the extra beds aren't priced. Worth getting in writing before arrival." },
+
+    { "type": "note", "html": "<b>Stay cost so far:</b> Tulum €191 · Oaxaca €1,725 · Puerto Escondido €989 · CDMX €590 = <b>~€3,495</b> for 10 nights (ECB rates 27 Jul: EUR/USD 1.1389, EUR/MXN 19.8817). Mérida and the two open nights not included. Tickets: Casa Azul €43 + Lucha Libre €138." },
+
+    { "type": "note", "html": "<b>Update 27 Jul:</b> Mérida booked (El Palacito Secreto, conf 5960376510). NY address + door codes added. Casa Badú 5th bed confirmed. Prices added in EUR. CDMX rental car dropped. Casa Azul + Lucha Libre tickets logged. <b>Correction:</b> Polanco runs 18→21 Aug, not 17→21 — the night of 17 Aug is uncovered." },
+
+    { "type": "note", "html": "<b>Route changes 18 Jul:</b> Chichén overnight, Campeche and Puebla dropped. Yucatán loop: Tulum → Mérida 2 nights (via Cobá, cenotes &amp; Valladolid, Uxmal day trip) → Puerto Morelos (via Chichén Itzá) → CUN. Palenque was dropped earlier for the round-trip loop." }
+  ]
+}
