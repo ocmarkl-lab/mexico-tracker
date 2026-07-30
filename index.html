@@ -40,7 +40,6 @@
     letter-spacing:.12em;text-transform:uppercase;color:var(--rosa);font-weight:700}
   .seg-label .rule{flex:1;height:1px;background:var(--line)}
 
-  /* car rental pill */
   .car{display:flex;align-items:center;gap:10px;background:var(--grey-soft);border:1px dashed #cdc6bb;
     border-radius:13px;padding:11px 13px;margin:12px 2px}
   .car .ico{font-size:18px}
@@ -50,16 +49,13 @@
   .car .tag{font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
     background:#fff;border:1px solid var(--line);color:var(--muted);padding:4px 8px;border-radius:20px;white-space:nowrap}
 
-  /* flight pill */
   .flight{display:flex;align-items:center;gap:10px;background:var(--sky-soft);border:1px solid #cfe0ec;
     border-radius:13px;padding:11px 13px;margin:12px 2px}
   .flight .ico{font-size:18px}
   .flight .body{flex:1;min-width:0}
   .flight .rt{font-weight:800;font-size:14px}
   .flight .dt{font-size:12px;color:var(--muted);margin-top:1px}
-  .flight .pr{font-weight:800;font-size:13px;color:var(--sky);white-space:nowrap}
 
-  /* stop card */
   .stop{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 14px 12px;margin:12px 2px;
     position:relative}
   .stop.booked{background:var(--agave-soft);border-color:#bfe0db}
@@ -77,7 +73,6 @@
   .pick .name{font-weight:700;font-size:14px}
   .pick .meta{font-size:12px;color:var(--muted);margin-top:2px}
   .pick .row{display:flex;justify-content:space-between;align-items:center;margin-top:6px;gap:10px}
-  .price{font-weight:800;font-size:15px}
   .conf{font-size:11px;color:var(--muted)}
   .conf b{color:var(--ink)}
   .cancel{display:inline-block;margin-top:6px;font-size:11px;font-weight:700;color:var(--agave)}
@@ -88,371 +83,118 @@
   .lk.maps{color:var(--sky)}
   .lk.book{color:var(--rosa)}
 
-  details{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
-  summary{cursor:pointer;font-size:12px;font-weight:700;color:var(--muted);list-style:none}
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:" ↓"}
-  details[open] summary::after{content:" ↑"}
-  .alt{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line)}
-  .alt:last-child{border-bottom:none}
-  .alt .an{font-size:13px;font-weight:600}
-  .alt .am{font-size:11px;color:var(--muted)}
-  .alt .ap{font-size:13px;font-weight:800;white-space:nowrap}
-
   .note{font-size:12px;color:var(--muted);background:var(--card);border:1px dashed var(--line);
     border-radius:12px;padding:10px 12px;margin:14px 2px}
   .note b{color:var(--ink)}
 
   .hide{display:none}
   a{color:inherit}
+  .err{margin:20px 2px;padding:14px;border-radius:12px;background:#FBEAF1;border:1px solid #f0c8d9;color:#8a2350;font-size:13px}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <div class="eyebrow">14 nights · 5 adults · 7–21 Aug 2026</div>
-    <h1>Mexico — Stays &amp; Route</h1>
-    <div class="sub">Vienna → New York → Cancún, then three Mexican hubs by flight.</div>
-
-    <div class="summary">
-      <div class="stat"><div class="k">Booked stays</div><div class="v">5<small>of 7 nights-blocks</small></div></div>
-      <div class="stat"><div class="k">Stay cost</div><div class="v">~€3,495<small>4 priced stays</small></div></div>
-      <div class="stat"><div class="k">Open</div><div class="v">2<small>nights unbooked</small></div></div>
-    </div>
-    <div class="grand">Open: <b>Puerto Morelos (10 Aug)</b> &amp; <b>CDMX (17 Aug)</b> · no CDMX rental car</div>
-  </header>
+  <header id="hdr"></header>
 
   <div class="tabs">
     <div class="tab on" data-tab="route" onclick="sw('route')">Route</div>
     <div class="tab" data-tab="open" onclick="sw('open')">Open stops</div>
   </div>
 
-  <!-- ============ ROUTE TAB ============ -->
-  <div id="route">
-
-    <div class="seg-label">New York · 3–7 Aug<span class="rule"></span></div>
-
-    <div class="flight">
-      <span class="ico">✈</span>
-      <div class="body">
-        <div class="rt">VIE → LHR → JFK · BA0723 / BA0115</div>
-        <div class="dt">Sun 3 Aug · 11:00 → 17:35 (JFK) · sons · ZVDHND</div>
-      </div>
-    </div>
-
-    <div class="flight">
-      <span class="ico">✈</span>
-      <div class="body">
-        <div class="rt">VIE → JFK · Austrian OS 35</div>
-        <div class="dt">Sun 3 Aug · 16:55 → 20:05 · Oliver &amp; Alexandra · 72PPSU</div>
-      </div>
-    </div>
-
-    <div class="stop booked">
-      <div class="top">
-        <div><div class="city">New York · 4 nights</div><div class="nights">4 nights · 3→7 Aug</div>
-          <div class="why">Base in Carroll Gardens / Red Hook, Brooklyn. Newark car picked up on arrival evening.</div></div>
-        <span class="badge b">Booked</span>
-      </div>
-      <div class="pick">
-        <div class="name">110 Luquer Street, Brooklyn, NY</div>
-        <div class="meta">Stay address 3–7 Aug</div>
-        <div class="row"><span class="conf">Entry code <b>170765</b> · Exit code <b>170765</b></span></div>
-        <span class="cancel">✓ Door codes confirmed</span>
-        <div class="links">
-          <a class="lk maps" href="https://www.google.com/maps/search/110+Luquer+Street+Brooklyn+NY" target="_blank">📍 Maps</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="car">
-      <span class="ico">🚗</span>
-      <div class="body">
-        <div class="rt">NY car — Budget (Newark)</div>
-        <div class="dt">Pick up 3 Aug 21:00 · drop 7 Aug · full-size · Priceline 377-163-573-97 · conf 48684782AT6</div>
-      </div>
-      <span class="tag">Booked</span>
-    </div>
-
-    <div class="flight">
-      <span class="ico">✈</span>
-      <div class="body">
-        <div class="rt">EWR → CUN · United UA1050</div>
-        <div class="dt">Fri 7 Aug · 09:41 → 12:47 · 5 pax · I8RC9X</div>
-      </div>
-    </div>
-
-    <!-- SEGMENT 1 -->
-    <div class="seg-label">Segment 1 — Yucatán loop (car)<span class="rule"></span></div>
-
-    <div class="stop">
-      <div class="top">
-        <div><div class="city">Cancún (CUN)</div><div class="nights">Arrive Fri 7 Aug · pick up rental car</div></div>
-      </div>
-      <div class="why">Round-trip car loop from the airport: Tulum → Mérida (via Cobá &amp; Valladolid) → Puerto Morelos (via Chichén Itzá).</div>
-    </div>
-
-    <div class="car">
-      <span class="ico">🚗</span>
-      <div class="body">
-        <div class="rt">Car 1 — Cancún (CUN) · Jeep Patriot 4x2 or similar</div>
-        <div class="dt">7 Aug 13:00 → 11 Aug 11:00 · CUN airport round-trip · €122 · BSP Auto 928264865351</div>
-      </div>
-      <span class="tag">Booked</span>
-    </div>
-
-    <div class="stop booked">
-      <div class="top">
-        <div><div class="city">Tulum · 1 night</div><div class="nights">1 night · 7→8 Aug</div>
-          <div class="why">El Castillo on the Caribbean — go early on 8 Aug before the crowds, then drive on.</div></div>
-        <span class="badge b">Booked</span>
-      </div>
-      <div class="pick">
-        <div class="name">Casa Kobaab — Suite Violet + Suite Jade</div>
-        <div class="meta">2 apartments · breakfast incl. · US$217.46 (~€191)</div>
-        <div class="row"><span class="conf">Conf <b>6398349276</b></span></div>
-        <span class="cancel">✓ Free cancellation until 5 Aug · 5th adult confirmed with host</span><br>
-        <span class="warn">⚠ Reservation is on file for 4 adults, not 5</span>
-        <div class="links">
-          <a class="lk maps" href="https://www.google.com/maps/search/Casa+Kobaab+Tulum" target="_blank">📍 Maps</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="stop booked">
-      <div class="top">
-        <div><div class="city">Mérida · 2 nights</div><div class="nights">2 nights · 8→10 Aug</div>
-          <div class="why">Sat 8: Tulum → Cobá (45 min, climbable-era pyramid site) → cenotes next to Cobá (Choo-Ha / Tamcach-Ha) → Valladolid stroll (~50 min) → Mérida (~1h45). Sun 9: day trip to Uxmal (~1h15 each way), evening in Mérida.</div></div>
-        <span class="badge b">Booked</span>
-      </div>
-      <div class="pick">
-        <div class="name">El Palacito Secreto Luxury Boutique Hotel &amp; Spa</div>
-        <div class="meta">Calle 66 #393, x 45 y 47, Centro, Mérida · WhatsApp +52 999 224 4533</div>
-        <div class="row"><span class="conf">Conf <b>5960376510</b></span></div>
-        <span class="warn">⚠ Prepaid online before arrival — hotel asks for confirmed arrival time</span>
-        <div class="links">
-          <a class="lk maps" href="https://maps.app.goo.gl/AZzcEa1R7gPdfJwMA" target="_blank">📍 Maps</a>
-          <a class="lk" href="https://www.elpalacitosecreto.com/" target="_blank">🌐 Hotel site</a>
-          <a class="lk maps" href="https://www.google.com/maps/dir/Tulum/Coba/Valladolid/Merida" target="_blank">📍 Tulum → Cobá → Valladolid → Mérida</a>
-          <a class="lk maps" href="https://www.google.com/maps/dir/Merida/Uxmal" target="_blank">📍 Mérida → Uxmal</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="stop">
-      <div class="top">
-        <div><div class="city">Puerto Morelos · 1 night</div><div class="nights">1 night · 10→11 Aug</div>
-          <div class="why">Mon 10: leave Mérida early → Chichén Itzá (~1h20, arrive near 8:00 opening to beat crowds &amp; heat) → Puerto Morelos (~2h40). Beach evening; only ~20 min to CUN airport for the 11 Aug flight.</div></div>
-        <span class="badge o">To book</span>
-      </div>
-      <div class="links">
-        <a class="lk maps" href="https://www.google.com/maps/dir/Merida/Chichen+Itza/Puerto+Morelos" target="_blank">📍 Mérida → Chichén → Pto Morelos</a>
-        <a class="lk book" href="https://www.booking.com/searchresults.html?ss=Puerto+Morelos&checkin=2026-08-10&checkout=2026-08-11&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308" target="_blank">Search stays</a>
-      </div>
-    </div>
-
-    <!-- FLIGHT 1 -->
-    <div class="flight">
-      <span class="ico">✈</span>
-      <div class="body">
-        <div class="rt">CUN → OAX · Volaris Y4 3598</div>
-        <div class="dt">Tue 11 Aug · 12:51 → 13:49 · 5 pax · UHSC6Q</div>
-      </div>
-
-    </div>
-
-    <!-- SEGMENT 2 -->
-    <div class="seg-label">Segment 2 — Oaxaca &amp; coast (car)<span class="rule"></span></div>
-
-    <div class="car">
-      <span class="ico">🚗</span>
-      <div class="body">
-        <div class="rt">Car 2 — Oaxaca (OAX) · Nissan X-Trail or similar</div>
-        <div class="dt">11 Aug 13:30 → 17 Aug 11:00 · OAX airport · prepaid · Alamo 2119439804 (AutoSlash 16469970)</div>
-      </div>
-      <span class="tag">Booked</span>
-    </div>
-
-    <div class="stop booked">
-      <div class="top">
-        <div><div class="city">Oaxaca · 3 nights</div><div class="nights">3 nights · 11→14 Aug</div>
-          <div class="why">Monte Albán. Drop after flight, pick up local car.</div></div>
-        <span class="badge b">Booked</span>
-      </div>
-      <div class="pick">
-        <div class="name">Grana B&amp;B</div>
-        <div class="meta">Loft + Junior Suite · breakfast incl. · MXN 34,300 (~€1,725) · pay at property</div>
-        <div class="row"><span class="conf">Conf <b>6471047053</b></span></div>
-        <span class="cancel">✓ Bed #5 confirmed by host Bruno</span><br>
-        <span class="warn">⚠ Free-cancellation window closed 27 Jul · booked for 4 adults on file · most expensive stop at ~€575/night</span>
-        <div class="links">
-          <a class="lk maps" href="https://www.google.com/maps/search/Grana+B%26B+Oaxaca" target="_blank">📍 Maps</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="stop booked">
-      <div class="top">
-        <div><div class="city">Puerto Escondido · 3 nights</div><div class="nights">3 nights · 14→17 Aug</div>
-          <div class="why">Pacific coast detour.</div></div>
-        <span class="badge b">Booked</span>
-      </div>
-      <div class="pick">
-        <div class="name">Casa Badú</div>
-        <div class="meta">Suite with Sea View + Superior King · no meals · MXN 19,659 (~€989)</div>
-        <div class="row"><span class="conf">Conf <b>5831809600</b></span></div>
-        <span class="cancel">✓ Free cancellation until 6 Aug · host confirmed blow-up bed for the 5th (21 Jul)</span><br>
-        <span class="warn">⚠ Reservation is on file for 2 adults · extra bed not priced</span>
-        <div class="links">
-          <a class="lk maps" href="https://www.google.com/maps/search/Casa+Badu+Puerto+Escondido" target="_blank">📍 Maps</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- FLIGHT 2 -->
-    <div class="flight">
-      <span class="ico">✈</span>
-      <div class="body">
-        <div class="rt">OAX → MEX · VivaAerobus VB 1335</div>
-        <div class="dt">Mon 17 Aug · 12:50 → 14:00 · 5 pax · CLKMXB</div>
-      </div>
-
-    </div>
-
-    <!-- SEGMENT 3 -->
-    <div class="seg-label">Segment 3 — CDMX (no car)<span class="rule"></span></div>
-
-    <div class="stop pending">
-      <div class="top">
-        <div><div class="city">Night of Mon 17 Aug</div><div class="nights">1 night · 17→18 Aug · NOT BOOKED</div>
-          <div class="why">The Viva flight lands MEX 14:00 on 17 Aug, but Polanco only starts 18 Aug. This night is uncovered.</div></div>
-        <span class="badge p">Gap</span>
-      </div>
-      <div class="links">
-        <a class="lk book" href="https://www.booking.com/searchresults.html?ss=Mexico+City&checkin=2026-08-17&checkout=2026-08-18&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308" target="_blank">Search stays</a>
-      </div>
-    </div>
-
-    <div class="stop booked">
-      <div class="top">
-        <div><div class="city">Mexico City · 3 nights</div><div class="nights">3 nights · 18→21 Aug</div>
-          <div class="why">Tue 18 is the big day: Casa Azul 10:30, Lucha Libre 19:30. Teotihuacán Wed 20 (tour or driver — no rental car; go for the 8:00 opening, no balloon). Puebla dropped.</div></div>
-        <span class="badge b">Booked</span>
-      </div>
-      <div class="pick">
-        <div class="name">MD Pasaje Polanco</div>
-        <div class="meta">1 apartment · 5 guests ✓ · US$672.26 (~€590)</div>
-        <div class="row"><span class="conf">Conf <b>5283491090</b></span></div>
-        <span class="cancel">✓ Free cancellation until 14 Aug · 5/5 adults</span>
-        <div class="links">
-          <a class="lk maps" href="https://www.google.com/maps/search/MD+Pasaje+Polanco+Mexico+City" target="_blank">📍 Maps</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="seg-label">Tickets booked — Tue 18 Aug<span class="rule"></span></div>
-
-    <div class="stop booked">
-      <div class="top">
-        <div><div class="city">Museo Frida Kahlo — Casa Azul</div><div class="nights">Tue 18 Aug · 10:30 entry</div>
-          <div class="why">Londres 247, Coyoacán. 15-minute entry window from 10:30 — arrive late and you lose the slot.</div></div>
-        <span class="badge b">Booked</span>
-      </div>
-      <div class="pick">
-        <div class="name">5 admissions · 2 general + 3 student/teacher rate</div>
-        <div class="meta">Order 117034144 · MXN 861 (~€43) · QR code from the Fever app, on a phone — screenshots OK</div>
-        <span class="warn">⚠ 3 tickets are the student/teacher/guide rate — bring valid IDs</span>
-        <span class="cancel">✓ Includes 5× free Museo Diego Rivera Anahuacalli entry — undated, valid 12 months</span>
-        <div class="links">
-          <a class="lk maps" href="https://www.google.com/maps/search/Museo+Frida+Kahlo+Londres+247+Coyoacan" target="_blank">📍 Casa Azul</a>
-          <a class="lk maps" href="https://www.google.com/maps/search/Museo+Anahuacalli+Diego+Rivera" target="_blank">📍 Anahuacalli</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="stop booked">
-      <div class="top">
-        <div><div class="city">Lucha Libre — Arena México</div><div class="nights">Tue 18 Aug · 19:30</div>
-          <div class="why">Martes Populares de Lucha Libre CMLL.</div></div>
-        <span class="badge b">Booked</span>
-      </div>
-      <div class="pick">
-        <div class="name">5 tickets · Ring 1 Premium — Sección RING N, Fila 5, seats 20–24</div>
-        <div class="meta">Order 47-31312/MXC · MXN 2,750 (~€138) incl. fees</div>
-        <span class="warn">⚠ Mobile tickets only — the confirmation email does NOT work at the door. Load them in the Ticketmaster app or phone wallet before you go.</span>
-        <div class="links">
-          <a class="lk maps" href="https://www.google.com/maps/search/Arena+Mexico" target="_blank">📍 Arena México</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="stop">
-      <div class="top">
-        <div><div class="city">Mexico City (MEX)</div><div class="nights">Depart Fri 21 Aug · 19:00 / 19:50</div></div>
-      </div>
-    </div>
-
-    <div class="flight">
-      <span class="ico">✈</span>
-      <div class="body">
-        <div class="rt">MEX → MAD → VIE · Iberia IB0308 / IB0795</div>
-        <div class="dt">Fri 21 Aug 19:00 → Sat 22 Aug 19:00 · sons · ZVDHND</div>
-      </div>
-    </div>
-
-    <div class="flight">
-      <span class="ico">✈</span>
-      <div class="body">
-        <div class="rt">MEX → FRA → VIE · LH 499 / OS 212</div>
-        <div class="dt">Fri 21 Aug 19:50 → Sat 22 Aug 17:15 · Oliver &amp; Alexandra · 72PPSU</div>
-      </div>
-    </div>
-
-    <div class="note">
-      <b>Return — two bookings, same evening.</b> The three sons fly MEX→Madrid→Vienna on Iberia (ZVDHND, dep 19:00); Oliver &amp; Alexandra fly MEX→Frankfurt→Vienna on Lufthansa/Austrian (72PPSU, dep 19:50). Both land Vienna Sat 22 Aug.
-    </div>
-  </div>
-
-  <!-- ============ OPEN STOPS TAB ============ -->
-  <div id="open" class="hide">
-    <div class="seg-label">Stays still to book<span class="rule"></span></div>
-
-    <div class="stop">
-      <div class="top"><div><div class="city">Puerto Morelos · 1 night</div><div class="nights">1 night · 10→11 Aug · 20 min to CUN airport</div></div><span class="badge o">Open</span></div>
-      <div class="links">
-        <a class="lk book" href="https://www.booking.com/searchresults.html?ss=Puerto+Morelos&checkin=2026-08-10&checkout=2026-08-11&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308" target="_blank">Search Booking.com</a>
-      </div>
-    </div>
-
-    <div class="stop pending">
-      <div class="top"><div><div class="city">Mexico City · 1 night</div><div class="nights">1 night · 17→18 Aug · lands MEX 14:00, Polanco starts 18 Aug</div></div><span class="badge p">Gap</span></div>
-      <div class="links">
-        <a class="lk book" href="https://www.booking.com/searchresults.html?ss=Mexico+City&checkin=2026-08-17&checkout=2026-08-18&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308" target="_blank">Search Booking.com</a>
-      </div>
-    </div>
-
-    <div class="seg-label">Open items<span class="rule"></span></div>
-
-    <div class="note"><b>Cars:</b> Cancún round-trip (7→11 Aug) and Oaxaca (11→17 Aug) are booked. <b>No CDMX car</b> — decided against it, so Teotihuacán on Wed 20 needs a tour or a driver.</div>
-
-    <div class="note"><b>Mérida:</b> confirm arrival time with El Palacito Secreto (WhatsApp +52 999 224 4533) — payment is taken through the hotel's own system before arrival, so watch for a card-decline message. <b>Price still unknown</b> — the Booking confirmation went to Alexandra's inbox only.</div>
-
-    <div class="note"><b>Guest counts:</b> Kobaab, Grana and Casa Badú are all on file for fewer than 5 adults. Hosts have agreed the extra person verbally in each case, but it isn't in the reservations and the extra beds aren't priced. Worth getting in writing before arrival.</div>
-
-    <div class="note"><b>Stay cost so far:</b> Tulum €191 · Oaxaca €1,725 · Puerto Escondido €989 · CDMX €590 = <b>~€3,495</b> for 10 nights (ECB rates 27 Jul: EUR/USD 1.1389, EUR/MXN 19.8817). Mérida and the two open nights not included. Tickets: Casa Azul €43 + Lucha Libre €138.</div>
-
-    <div class="note"><b>Update 27 Jul:</b> Mérida booked (El Palacito Secreto, conf 5960376510). NY address + door codes added. Casa Badú 5th bed confirmed. Prices added in EUR. CDMX rental car dropped. Casa Azul + Lucha Libre tickets logged. <b>Correction:</b> Polanco runs 18→21 Aug, not 17→21 — the night of 17 Aug is uncovered.</div>
-
-    <div class="note"><b>Route changes 18 Jul:</b> Chichén overnight, Campeche and Puebla dropped. Yucatán loop: Tulum → Mérida 2 nights (via Cobá, cenotes &amp; Valladolid, Uxmal day trip) → Puerto Morelos (via Chichén Itzá) → CUN. Palenque was dropped earlier for the round-trip loop.</div>
-  </div>
+  <div id="route"></div>
+  <div id="open" class="hide"></div>
 </div>
 
 <script>
-  function sw(t){
-    document.querySelectorAll('.tab').forEach(function(x){x.classList.toggle('on',x.dataset.tab===t)});
-    document.getElementById('route').classList.toggle('hide',t!=='route');
-    document.getElementById('open').classList.toggle('hide',t!=='open');
+/* ------------------------------------------------------------------
+   All trip content lives in data.json. Edit that file, not this one.
+   Block types: seg | flight | car | stop | note
+   ------------------------------------------------------------------ */
+
+function sw(t){
+  document.querySelectorAll('.tab').forEach(function(x){x.classList.toggle('on', x.dataset.tab === t)});
+  document.getElementById('route').classList.toggle('hide', t !== 'route');
+  document.getElementById('open').classList.toggle('hide', t !== 'open');
+}
+
+function linksHTML(links){
+  if(!links || !links.length) return '';
+  return '<div class="links">' + links.map(function(l){
+    return '<a class="lk ' + (l.cls || '') + '" href="' + l.href + '" target="_blank">' + l.text + '</a>';
+  }).join('') + '</div>';
+}
+
+function pickHTML(p){
+  if(!p) return '';
+  var h = '<div class="pick">';
+  if(p.name) h += '<div class="name">' + p.name + '</div>';
+  if(p.meta) h += '<div class="meta">' + p.meta + '</div>';
+  if(p.conf) h += '<div class="row"><span class="conf">' + p.conf + '</span></div>';
+  (p.ok   || []).forEach(function(t){ h += '<span class="cancel">✓ ' + t + '</span><br>'; });
+  (p.warn || []).forEach(function(t){ h += '<span class="warn">⚠ ' + t + '</span><br>'; });
+  h += linksHTML(p.links);
+  h += '</div>';
+  return h;
+}
+
+function blockHTML(b){
+  switch(b.type){
+    case 'seg':
+      return '<div class="seg-label">' + b.label + '<span class="rule"></span></div>';
+
+    case 'flight':
+      return '<div class="flight"><span class="ico">✈</span><div class="body">' +
+             '<div class="rt">' + b.rt + '</div><div class="dt">' + b.dt + '</div></div></div>';
+
+    case 'car':
+      return '<div class="car"><span class="ico">🚗</span><div class="body">' +
+             '<div class="rt">' + b.rt + '</div><div class="dt">' + b.dt + '</div></div>' +
+             (b.tag ? '<span class="tag">' + b.tag + '</span>' : '') + '</div>';
+
+    case 'note':
+      return '<div class="note">' + b.html + '</div>';
+
+    case 'stop':
+      var h = '<div class="stop ' + (b.state || '') + '"><div class="top"><div>' +
+              '<div class="city">' + b.city + '</div>' +
+              '<div class="nights">' + (b.nights || '') + '</div>';
+      if(b.why) h += '<div class="why">' + b.why + '</div>';
+      h += '</div>';
+      if(b.badge) h += '<span class="badge ' + b.badge.cls + '">' + b.badge.text + '</span>';
+      h += '</div>';
+      h += pickHTML(b.pick);
+      if(!b.pick) h += linksHTML(b.links);
+      h += '</div>';
+      return h;
+
+    default:
+      return '';
   }
+}
+
+function renderHeader(hd){
+  var h = '<div class="eyebrow">' + hd.eyebrow + '</div>' +
+          '<h1>' + hd.title + '</h1>' +
+          '<div class="sub">' + hd.sub + '</div><div class="summary">';
+  hd.stats.forEach(function(s){
+    h += '<div class="stat"><div class="k">' + s.k + '</div><div class="v">' + s.v +
+         '<small>' + s.small + '</small></div></div>';
+  });
+  h += '</div><div class="grand">' + hd.grand + '</div>';
+  document.getElementById('hdr').innerHTML = h;
+}
+
+fetch('data.json?v=' + Date.now())
+  .then(function(r){ if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(function(d){
+    renderHeader(d.header);
+    document.getElementById('route').innerHTML = d.route.map(blockHTML).join('');
+    document.getElementById('open').innerHTML  = d.open.map(blockHTML).join('');
+  })
+  .catch(function(e){
+    document.getElementById('route').innerHTML =
+      '<div class="err">Could not load <b>data.json</b> — ' + e.message + '</div>';
+  });
 </script>
 </body>
 </html>
