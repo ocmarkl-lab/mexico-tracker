@@ -5,7 +5,6 @@
     "sub": "Vienna → New York → Cancún, then three Mexican hubs by flight.",
     "stats": [
       { "k": "Booked stays", "v": "5", "small": "of 7 night-blocks" },
-      { "k": "Stay cost", "v": "~€3,495", "small": "4 priced stays" },
       { "k": "Open", "v": "2", "small": "nights unbooked" }
     ],
     "grand": "Open: <b>Puerto Morelos (10 Aug)</b> &amp; <b>CDMX (17 Aug)</b> · no CDMX rental car"
@@ -40,7 +39,7 @@
       "why": "Beast Downtown — 30-minute blast from the Seaport down to the Statue of Liberty. Boarding opens 11:45; the boat leaves sharply at 12:00, no exceptions.",
       "pick": {
         "name": "5 × Beast Downtown Adult · Pier 16, 89 South St, Seaport, Manhattan",
-        "meta": "US$125.00 (~€110) · $25 each · tickets are the PDF on the order email — show on a phone or bring a printout",
+        "meta": "Tickets are the PDF on the order email — show on a phone or bring a printout",
         "conf": "Order <b>BST-1785575838-e6fd</b>",
         "warn": ["Does NOT run in rain — if they cancel, you get an email to reschedule or refund", "Every guest needs their own ticket at security · no outside food or drink, no glass, aerosols or luggage"],
         "links": [
@@ -60,14 +59,14 @@
       "why": "Round-trip car loop from the airport: Tulum → Mérida (via Cobá &amp; Valladolid) → Puerto Morelos (via Chichén Itzá)." },
 
     { "type": "car", "tag": "Booked", "rt": "Car 1 — Cancún (CUN) · Jeep Patriot 4x2 or similar",
-      "dt": "7 Aug 13:00 → 11 Aug 11:00 · CUN airport round-trip · €122 · BSP Auto 928264865351" },
+      "dt": "7 Aug 13:00 → 11 Aug 11:00 · CUN airport round-trip · BSP Auto 928264865351" },
 
     { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
       "city": "Tulum · 1 night", "nights": "1 night · 7→8 Aug",
       "why": "El Castillo on the Caribbean — go early on 8 Aug before the crowds, then drive on.",
       "pick": {
         "name": "Casa Kobaab — Suite Violet + Suite Jade",
-        "meta": "2 apartments · breakfast incl. · US$217.46 (~€191)",
+        "meta": "2 apartments · breakfast incl.",
         "conf": "Conf <b>6398349276</b>",
         "ok": ["Free cancellation until 5 Aug · 5th adult confirmed with host"],
         "warn": ["Reservation is on file for 4 adults, not 5"],
@@ -114,10 +113,10 @@
       "why": "Monte Albán. Drop after flight, pick up local car.",
       "pick": {
         "name": "Grana B&amp;B",
-        "meta": "Loft + Junior Suite · breakfast incl. · MXN 34,300 (~€1,725) · pay at property",
+        "meta": "Loft + Junior Suite · breakfast incl. · pay at property",
         "conf": "Conf <b>6471047053</b>",
         "ok": ["Bed #5 confirmed by host Bruno"],
-        "warn": ["Free-cancellation window closed 27 Jul · booked for 4 adults on file · most expensive stop at ~€575/night"],
+        "warn": ["Free-cancellation window closed 27 Jul · booked for 4 adults on file"],
         "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/Grana+B%26B+Oaxaca", "text": "📍 Maps" }]
       }
     },
@@ -127,7 +126,7 @@
       "why": "Pacific coast detour.",
       "pick": {
         "name": "Casa Badú",
-        "meta": "Suite with Sea View + Superior King · no meals · MXN 19,659 (~€989)",
+        "meta": "Suite with Sea View + Superior King · no meals",
         "conf": "Conf <b>5831809600</b>",
         "ok": ["Free cancellation until 6 Aug · host confirmed blow-up bed for the 5th (21 Jul)"],
         "warn": ["Reservation is on file for 2 adults · extra bed not priced"],
@@ -151,7 +150,7 @@
       "why": "Tue 18 is the big day: Casa Azul 10:30, Lucha Libre 19:30. Teotihuacán Wed 20 (tour or driver — no rental car; go for the 8:00 opening, no balloon). Puebla dropped.",
       "pick": {
         "name": "MD Pasaje Polanco",
-        "meta": "1 apartment · 5 guests ✓ · US$672.26 (~€590)",
+        "meta": "1 apartment · 5 guests ✓",
         "conf": "Conf <b>5283491090</b>",
         "ok": ["Free cancellation until 14 Aug · 5/5 adults"],
         "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/MD+Pasaje+Polanco+Mexico+City", "text": "📍 Maps" }]
@@ -165,7 +164,7 @@
       "why": "Londres 247, Coyoacán. 15-minute entry window from 10:30 — arrive late and you lose the slot.",
       "pick": {
         "name": "5 admissions · 2 general + 3 student/teacher rate",
-        "meta": "Order 117034144 · MXN 861 (~€43) · QR code from the Fever app, on a phone — screenshots OK",
+        "meta": "Order 117034144 · QR code from the Fever app, on a phone — screenshots OK",
         "warn": ["3 tickets are the student/teacher/guide rate — bring valid IDs"],
         "ok": ["Includes 5× free Museo Diego Rivera Anahuacalli entry — undated, valid 12 months"],
         "links": [
@@ -180,7 +179,7 @@
       "why": "Martes Populares de Lucha Libre CMLL.",
       "pick": {
         "name": "5 tickets · Ring 1 Premium — Sección RING N, Fila 5, seats 20–24",
-        "meta": "Order 47-31312/MXC · MXN 2,750 (~€138) incl. fees",
+        "meta": "Order 47-31312/MXC",
         "warn": ["Mobile tickets only — the confirmation email does NOT work at the door. Load them in the Ticketmaster app or phone wallet before you go."],
         "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/Arena+Mexico", "text": "📍 Arena México" }]
       }
@@ -215,17 +214,15 @@
 
     { "type": "note", "html": "<b>Cars:</b> Cancún round-trip (7→11 Aug) and Oaxaca (11→17 Aug) are booked. <b>No CDMX car</b> — decided against it, so Teotihuacán on Wed 20 needs a tour or a driver." },
 
-    { "type": "note", "html": "<b>Mérida:</b> confirm arrival time with El Palacito Secreto (WhatsApp +52 999 224 4533) — payment is taken through the hotel's own system before arrival, so watch for a card-decline message. <b>Price still unknown</b> — the Booking confirmation went to Alexandra's inbox only." },
+    { "type": "note", "html": "<b>Mérida:</b> confirm arrival time with El Palacito Secreto (WhatsApp +52 999 224 4533) — payment is taken through the hotel's own system before arrival, so watch for a card-decline message." },
 
-    { "type": "note", "html": "<b>Guest counts:</b> Kobaab, Grana and Casa Badú are all on file for fewer than 5 adults. Hosts have agreed the extra person verbally in each case, but it isn't in the reservations and the extra beds aren't priced. Worth getting in writing before arrival." },
+    { "type": "note", "html": "<b>Guest counts:</b> Kobaab, Grana and Casa Badú are all on file for fewer than 5 adults. Hosts have agreed the extra person verbally in each case, but it isn't in the reservations and the extra beds aren't confirmed in writing. Worth getting in writing before arrival." },
 
     { "type": "note", "html": "<b>The Beast:</b> weather-dependent — check the forecast for Tue 4 Aug midday. If it rains they cancel and offer a reschedule or refund, so keep that afternoon flexible." },
 
-    { "type": "note", "html": "<b>Stay cost so far:</b> Tulum €191 · Oaxaca €1,725 · Puerto Escondido €989 · CDMX €590 = <b>~€3,495</b> for 10 nights (ECB rates 27 Jul: EUR/USD 1.1389, EUR/MXN 19.8817). Mérida and the two open nights not included. Tickets: Casa Azul €43 + Lucha Libre €138 + The Beast €110." },
+    { "type": "note", "html": "<b>Update 1 Aug:</b> The Beast speedboat booked — Beast Downtown, Tue 4 Aug 12:00 from Pier 16, 5 adults, order BST-1785575838-e6fd. Tickets are the PDF attached to the order email. All price information removed from the tracker." },
 
-    { "type": "note", "html": "<b>Update 1 Aug:</b> The Beast speedboat booked — Beast Downtown, Tue 4 Aug 12:00 from Pier 16, 5 adults, US$125, order BST-1785575838-e6fd. Tickets are the PDF attached to the order email." },
-
-    { "type": "note", "html": "<b>Update 27 Jul:</b> Mérida booked (El Palacito Secreto, conf 5960376510). NY address + door codes added. Casa Badú 5th bed confirmed. Prices added in EUR. CDMX rental car dropped. Casa Azul + Lucha Libre tickets logged. <b>Correction:</b> Polanco runs 18→21 Aug, not 17→21 — the night of 17 Aug is uncovered." },
+    { "type": "note", "html": "<b>Update 27 Jul:</b> Mérida booked (El Palacito Secreto, conf 5960376510). NY address + door codes added. Casa Badú 5th bed confirmed. CDMX rental car dropped. Casa Azul + Lucha Libre tickets logged. <b>Correction:</b> Polanco runs 18→21 Aug, not 17→21 — the night of 17 Aug is uncovered." },
 
     { "type": "note", "html": "<b>Route changes 18 Jul:</b> Chichén overnight, Campeche and Puebla dropped. Yucatán loop: Tulum → Mérida 2 nights (via Cobá, cenotes &amp; Valladolid, Uxmal day trip) → Puerto Morelos (via Chichén Itzá) → CUN. Palenque was dropped earlier for the round-trip loop." }
   ]
