@@ -4,10 +4,10 @@
     "title": "Mexico — Stays & Route",
     "sub": "Vienna → New York → Cancún, then three Mexican hubs by flight.",
     "stats": [
-      { "k": "Booked stays", "v": "5", "small": "of 7 night-blocks" },
-      { "k": "Open", "v": "2", "small": "nights unbooked" }
+      { "k": "Booked stays", "v": "6", "small": "of 7 night-blocks" },
+      { "k": "Open", "v": "1", "small": "night unbooked" }
     ],
-    "grand": "Open: <b>Puerto Morelos (10 Aug)</b> &amp; <b>CDMX (17 Aug)</b> · no CDMX rental car"
+    "grand": "Open: <b>Puerto Morelos (10 Aug)</b> · no CDMX rental car"
   },
 
   "route": [
@@ -139,20 +139,15 @@
 
     { "type": "seg", "label": "Segment 3 — CDMX (no car)" },
 
-    { "type": "stop", "state": "pending", "badge": { "cls": "p", "text": "Gap" },
-      "city": "Night of Mon 17 Aug", "nights": "1 night · 17→18 Aug · NOT BOOKED",
-      "why": "The Viva flight lands MEX 14:00 on 17 Aug, but Polanco only starts 18 Aug. This night is uncovered.",
-      "links": [{ "cls": "book", "href": "https://www.booking.com/searchresults.html?ss=Mexico+City&checkin=2026-08-17&checkout=2026-08-18&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308", "text": "Search stays" }]
-    },
-
     { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
-      "city": "Mexico City · 3 nights", "nights": "3 nights · 18→21 Aug",
-      "why": "Tue 18 is the big day: Casa Azul 10:30, Lucha Libre 19:30. Teotihuacán Wed 20 (tour or driver — no rental car; go for the 8:00 opening, no balloon). Puebla dropped.",
+      "city": "Mexico City · 4 nights", "nights": "4 nights · 17→21 Aug",
+      "why": "Rebooked to start 17 Aug — the Viva flight lands MEX 14:00 and you go straight to Polanco, so the old 17 Aug gap is closed. Tue 18 is the big day: Casa Azul 10:30, Lucha Libre 19:30. Teotihuacán Wed 20 (tour or driver — no rental car; go for the 8:00 opening, no balloon).",
       "pick": {
         "name": "MD Pasaje Polanco",
-        "meta": "1 apartment · 5 guests ✓",
-        "conf": "Conf <b>5283491090</b>",
-        "ok": ["Free cancellation until 14 Aug · 5/5 adults"],
+        "meta": "1 apartment · 5 guests ✓ · check-in Mon 17 Aug",
+        "conf": "Conf <b>5283491090</b> (original booking)",
+        "ok": ["5/5 adults"],
+        "warn": ["Rebooked from 17 Aug — the new confirmation is not on file here yet. Check the cancellation terms on the new reservation; the old 14 Aug free-cancellation date may no longer apply."],
         "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/MD+Pasaje+Polanco+Mexico+City", "text": "📍 Maps" }]
       }
     },
@@ -205,12 +200,9 @@
       "links": [{ "cls": "book", "href": "https://www.booking.com/searchresults.html?ss=Puerto+Morelos&checkin=2026-08-10&checkout=2026-08-11&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308", "text": "Search Booking.com" }]
     },
 
-    { "type": "stop", "state": "pending", "badge": { "cls": "p", "text": "Gap" },
-      "city": "Mexico City · 1 night", "nights": "1 night · 17→18 Aug · lands MEX 14:00, Polanco starts 18 Aug",
-      "links": [{ "cls": "book", "href": "https://www.booking.com/searchresults.html?ss=Mexico+City&checkin=2026-08-17&checkout=2026-08-18&group_adults=5&no_rooms=2&selected_currency=EUR&aid=8132308", "text": "Search Booking.com" }]
-    },
-
     { "type": "seg", "label": "Open items" },
+
+    { "type": "note", "html": "<b>Polanco:</b> rebooked to run 17→21 Aug. The new confirmation hasn't been filed here — send it over and it goes on the card. Worth checking the cancellation terms of the new reservation." },
 
     { "type": "note", "html": "<b>Cars:</b> Cancún round-trip (7→11 Aug) and Oaxaca (11→17 Aug) are booked. <b>No CDMX car</b> — decided against it, so Teotihuacán on Wed 20 needs a tour or a driver." },
 
@@ -220,9 +212,9 @@
 
     { "type": "note", "html": "<b>The Beast:</b> weather-dependent — check the forecast for Tue 4 Aug midday. If it rains they cancel and offer a reschedule or refund, so keep that afternoon flexible." },
 
-    { "type": "note", "html": "<b>Update 1 Aug:</b> The Beast speedboat booked — Beast Downtown, Tue 4 Aug 12:00 from Pier 16, 5 adults, order BST-1785575838-e6fd. Tickets are the PDF attached to the order email. All price information removed from the tracker." },
+    { "type": "note", "html": "<b>Update 1 Aug:</b> Polanco rebooked to start 17 Aug — the 17 Aug gap is closed and CDMX is now 4 nights. The Beast speedboat booked (Tue 4 Aug 12:00 from Pier 16, 5 adults, order BST-1785575838-e6fd). All price information removed from the tracker." },
 
-    { "type": "note", "html": "<b>Update 27 Jul:</b> Mérida booked (El Palacito Secreto, conf 5960376510). NY address + door codes added. Casa Badú 5th bed confirmed. CDMX rental car dropped. Casa Azul + Lucha Libre tickets logged. <b>Correction:</b> Polanco runs 18→21 Aug, not 17→21 — the night of 17 Aug is uncovered." },
+    { "type": "note", "html": "<b>Update 27 Jul:</b> Mérida booked (El Palacito Secreto, conf 5960376510). NY address + door codes added. Casa Badú 5th bed confirmed. CDMX rental car dropped. Casa Azul + Lucha Libre tickets logged." },
 
     { "type": "note", "html": "<b>Route changes 18 Jul:</b> Chichén overnight, Campeche and Puebla dropped. Yucatán loop: Tulum → Mérida 2 nights (via Cobá, cenotes &amp; Valladolid, Uxmal day trip) → Puerto Morelos (via Chichén Itzá) → CUN. Palenque was dropped earlier for the round-trip loop." }
   ]
