@@ -35,6 +35,21 @@
     { "type": "car", "tag": "Booked", "rt": "NY car — Budget (Newark)",
       "dt": "Pick up 3 Aug 21:00 · drop 7 Aug · full-size · Priceline 377-163-573-97 · conf 48684782AT6" },
 
+    { "type": "stop", "state": "booked", "badge": { "cls": "b", "text": "Booked" },
+      "city": "The Beast — speedboat", "nights": "Tue 4 Aug · 12:00 departure",
+      "why": "Beast Downtown — 30-minute blast from the Seaport down to the Statue of Liberty. Boarding opens 11:45; the boat leaves sharply at 12:00, no exceptions.",
+      "pick": {
+        "name": "5 × Beast Downtown Adult · Pier 16, 89 South St, Seaport, Manhattan",
+        "meta": "US$125.00 (~€110) · $25 each · tickets are the PDF on the order email — show on a phone or bring a printout",
+        "conf": "Order <b>BST-1785575838-e6fd</b>",
+        "warn": ["Does NOT run in rain — if they cancel, you get an email to reschedule or refund", "Every guest needs their own ticket at security · no outside food or drink, no glass, aerosols or luggage"],
+        "links": [
+          { "cls": "maps", "href": "https://www.google.com/maps/place/Circle+Line+Sightseeing+Cruises+-+Pier+16/@40.705734,-74.0056643,17z", "text": "📍 Pier 16" },
+          { "cls": "", "href": "https://www.thebeastnyc.com/", "text": "🌐 The Beast" }
+        ]
+      }
+    },
+
     { "type": "flight", "rt": "EWR → CUN · United UA1050",
       "dt": "Fri 7 Aug · 09:41 → 12:47 · 5 pax · I8RC9X" },
 
@@ -204,7 +219,11 @@
 
     { "type": "note", "html": "<b>Guest counts:</b> Kobaab, Grana and Casa Badú are all on file for fewer than 5 adults. Hosts have agreed the extra person verbally in each case, but it isn't in the reservations and the extra beds aren't priced. Worth getting in writing before arrival." },
 
-    { "type": "note", "html": "<b>Stay cost so far:</b> Tulum €191 · Oaxaca €1,725 · Puerto Escondido €989 · CDMX €590 = <b>~€3,495</b> for 10 nights (ECB rates 27 Jul: EUR/USD 1.1389, EUR/MXN 19.8817). Mérida and the two open nights not included. Tickets: Casa Azul €43 + Lucha Libre €138." },
+    { "type": "note", "html": "<b>The Beast:</b> weather-dependent — check the forecast for Tue 4 Aug midday. If it rains they cancel and offer a reschedule or refund, so keep that afternoon flexible." },
+
+    { "type": "note", "html": "<b>Stay cost so far:</b> Tulum €191 · Oaxaca €1,725 · Puerto Escondido €989 · CDMX €590 = <b>~€3,495</b> for 10 nights (ECB rates 27 Jul: EUR/USD 1.1389, EUR/MXN 19.8817). Mérida and the two open nights not included. Tickets: Casa Azul €43 + Lucha Libre €138 + The Beast €110." },
+
+    { "type": "note", "html": "<b>Update 1 Aug:</b> The Beast speedboat booked — Beast Downtown, Tue 4 Aug 12:00 from Pier 16, 5 adults, US$125, order BST-1785575838-e6fd. Tickets are the PDF attached to the order email." },
 
     { "type": "note", "html": "<b>Update 27 Jul:</b> Mérida booked (El Palacito Secreto, conf 5960376510). NY address + door codes added. Casa Badú 5th bed confirmed. Prices added in EUR. CDMX rental car dropped. Casa Azul + Lucha Libre tickets logged. <b>Correction:</b> Polanco runs 18→21 Aug, not 17→21 — the night of 17 Aug is uncovered." },
 
