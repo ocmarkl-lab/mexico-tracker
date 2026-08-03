@@ -49,6 +49,17 @@
       }
     },
 
+    { "type": "stop", "state": "", "badge": { "cls": "o", "text": "Planned" },
+      "city": "Cecconi's DUMBO — dinner", "nights": "Tue 4 Aug · 18:30",
+      "why": "Italian at 55 Water St, Brooklyn — same building as the Thu 6 Aug DUMBO House breakfast. Kitchen runs to 22:00.",
+      "pick": {
+        "name": "Dinner · 5 people · 18:30",
+        "meta": "55 Water St, Brooklyn, NY 11201 · +1 718-650-3900",
+        "warn": ["No reservation on file here — confirm the booking with the restaurant"],
+        "links": [{ "cls": "maps", "href": "https://www.google.com/maps/search/Cecconi%27s+DUMBO+55+Water+St+Brooklyn", "text": "📍 Maps" }]
+      }
+    },
+
     { "type": "flight", "rt": "EWR → CUN · United UA1050",
       "dt": "Fri 7 Aug · 09:41 → 12:47 · 5 pax · I8RC9X" },
 
@@ -202,6 +213,8 @@
 
     { "type": "seg", "label": "Open items" },
 
+    { "type": "note", "html": "<b>Cecconi's DUMBO:</b> dinner pencilled for Tue 4 Aug 18:30, 5 people. No reservation confirmation on file — call +1 718-650-3900 or book online if it isn't already done." },
+
     { "type": "note", "html": "<b>Polanco:</b> rebooked to run 17→21 Aug. The new confirmation hasn't been filed here — send it over and it goes on the card. Worth checking the cancellation terms of the new reservation." },
 
     { "type": "note", "html": "<b>Cars:</b> Cancún round-trip (7→11 Aug) and Oaxaca (11→17 Aug) are booked. <b>No CDMX car</b> — decided against it, so Teotihuacán on Wed 20 needs a tour or a driver." },
@@ -211,6 +224,8 @@
     { "type": "note", "html": "<b>Guest counts:</b> Kobaab, Grana and Casa Badú are all on file for fewer than 5 adults. Hosts have agreed the extra person verbally in each case, but it isn't in the reservations and the extra beds aren't confirmed in writing. Worth getting in writing before arrival." },
 
     { "type": "note", "html": "<b>The Beast:</b> weather-dependent — check the forecast for Tue 4 Aug midday. If it rains they cancel and offer a reschedule or refund, so keep that afternoon flexible." },
+
+    { "type": "note", "html": "<b>Update 3 Aug:</b> Cecconi's DUMBO dinner added — Tue 4 Aug 18:30, 55 Water St, Brooklyn, 5 people." },
 
     { "type": "note", "html": "<b>Update 1 Aug:</b> Polanco rebooked to start 17 Aug — the 17 Aug gap is closed and CDMX is now 4 nights. The Beast speedboat booked (Tue 4 Aug 12:00 from Pier 16, 5 adults, order BST-1785575838-e6fd). All price information removed from the tracker." },
 
